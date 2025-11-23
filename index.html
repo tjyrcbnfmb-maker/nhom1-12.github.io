@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHÓM 1 _ 12SĐ</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #dfe9f3, #ffffff);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .banner {
+    width: 100%;
+    height: 330px;
+    background-image: url("https://i.pinimg.com/1200x/df/06/1f/df061ffbf30e83b0c13a8cdca9241f5e.jpg");
+    background-size: cover;
+    background-position: center;
+}
+        @keyframes bannerEnter {
+            from { transform: scale(1.1); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        h2 {
+            text-align: center;
+            margin: 40px 0 10px 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+            color: #333;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .members, .lessons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 20px 40px;
+        }
+
+        .card {
+            width: 200px;
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: 0.3s ease-in-out;
+            animation: fadeCard 0.8s ease-out;
+        }
+
+        @keyframes fadeCard {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        h3 {
+            margin-top: 12px;
+            font-weight: 600;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="banner"></div>
+
+    <h2>🌷 GIỚI THIỆU THÀNH VIÊN 🌷</h2>
+
+    <div class="members">
+        <div class="card" onclick="location.href='thanhvien1.html'">
+            <img src="https://i.pinimg.com/736x/c7/43/32/c74332423bcee5a6852f3f2a2cb42996.jpg" alt="Xuân Yến">
+            <h3>Xuân Yến</h3>
+        </div>
+
+        <div class="card" onclick="location.href='thanhvien2.html'">
+            <img src="https://i.pinimg.com/1200x/0f/bc/e2/0fbce2014ddf9be84f3ad95a92782053.jpg" alt="Mỹ ">
+            <h3>Mỹ Uyên</h3>
+        </div>
+
+        <div class="card" onclick="location.href='thanhvien3.html'">
+            <img src="https://i.pinimg.com/736x/8e/40/2e/8e402e57d2ec2928a4a81d196db2c9ec.jpg" alt="Tường Vy">
+            <h3>Tường Vy</h3>
+        </div>
+
+        <div class="card" onclick="location.href='thanhvien4.html'">
+            <img src="https://i.pinimg.com/736x/83/50/f1/8350f1faff5c435230f7b3c951322267.jpg" alt="Thảo Hiền">
+            <h3>Thảo Hiền</h3>
+        </div>
+
+        <div class="card" onclick="location.href='thanhvien5.html'">
+            <img src="https://i.pinimg.com/736x/20/c5/08/20c508cc4173e9e179d99d15b4ba74ed.jpg" alt="Trương Tuyền">
+            <h3>Trương Tuyền</h3>
+        </div>
+    </div>
+
+    <h2>📘 BÀI HỌC- THUYẾT TRÌNH 📘</h2>
+
+    <div class="lessons">
+        <a href="https://www.canva.com/design/DAG5cebWjFs/LQswfeiJDwunqhQ9QJ5Qyw/edit?utm_content=DAG5cebWjFs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card">
+            <h3>BÀI 8</h3>
+        </a>
+
+        <a href="https://www.canva.com/design/DAG5cZmBvmI/OFyI5eGZCtFHxFp3Jqw4xg/edit?utm_content=DAG5cZmBvmI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card">
+            <h3>BÀI 9</h3>
+        </a>
+
+        <a href="https://www.canva.com/design/DAG5cf81ow0/wCCREo-BdxjqWG95TBGbMQ/edit?utm_content=DAG5cf81ow0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card">
+            <h3>BÀI 10</h3>
+        </a>
+
+        <a href="https://youtu.be/iA8IGU23W7o?si=3XV1FnsQT5wbril1" class="card">
+            <h3>BÀI 11</h3>
+        </a>
+
+        <a href="https://youtu.be/EtzM-dLJF7c?si=pfdeB63iQ9rh6rR5" class="card">
+            <h3>BÀI 12</h3>
+        </a>
+    </div>
+
+</body>
+</html>
